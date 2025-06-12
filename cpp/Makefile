@@ -42,6 +42,7 @@ ea_transpose: transpose_main.cpp
 	$(CXX) $(CXXFLAGS) $(INC) transpose_main.cpp -o ea_transpose $(LIB) $(SHARED_LIB)
 
 
+.PHONY: all clean
 .PHONY: iid non_iid restart conditioning transpose
 
 iid: ea_iid
